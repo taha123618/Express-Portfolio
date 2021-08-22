@@ -1,0 +1,56 @@
+{{>headerlink}}
+<body>
+        
+        <figure class="errimg">
+            <img src="img/404.png" alt="Error page" class="img-fluid">
+        </figure>
+        <p >Welcome To My page</p>
+        <h1>{{errmsg}}</h1>
+        <a href="/" type="button" class="cta1"  style="color: black;">Go Back</a>
+
+<style>
+    .errimg img {
+  width: 50rem;
+  height: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+}
+
+    p , h1{
+        margin-top: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+    }
+
+
+    .cta1 {
+    width:50%;
+    margin-left:40%;
+    margin-right:40%;
+	padding: 5px 20px;
+	background-color: transparent;
+	border: 2px solid rgb(218, 63, 94);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 50px;
+	transition: .3s ease;
+
+}
+
+.cta1:hover {
+	color: #000;
+	background-color: rgb(218, 63, 94);
+}
+
+  
+</style>
+        
+
+
+  <script src="app.js"></script>
+</body>
+</html>
