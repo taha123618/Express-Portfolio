@@ -19,4 +19,55 @@
         <a href="https://www.linkedin.com/in/taha-ahmed1999"> Taha Ahmed</a> . All rights reserved</p>
     </div>
   </section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> &#11165;</button>
+
+<style>
+  #myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  outline: none; 
+  background-color:rgb(218, 63, 94); 
+  color: #eee; 
+  cursor: pointer; 
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+#myBtn:hover{
+  background: #eee;
+  color:rgb(218, 63, 94);
+}
+
+</style>
+  <script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 30px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 1; // For Safari
+  document.documentElement.scrollTop = 1; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+  
   <!-- End Footer -->

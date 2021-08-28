@@ -36,7 +36,6 @@ app.get("/",(req,res) => {
         res.render("404.hbs",{
          errmsg : "Opps! You Are Visit Wrong page"
         });
-      //   res.send("Opps! PAge Not Found");
         }); 
 
         // listinnng 
